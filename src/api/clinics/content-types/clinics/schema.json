@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinics_api",
+  "info": {
+    "singularName": "clinics",
+    "pluralName": "clinics-api",
+    "displayName": "clinics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "request_id": {
+      "type": "string",
+      "required": true
+    },
+    "request_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "clinic_name": {
+      "type": "string",
+      "required": true
+    },
+    "clinic_location": {
+      "type": "string",
+      "required": true
+    },
+    "clinic_preview_photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clinic_benefits_list": {
+      "type": "richtext"
+    },
+    "clinic_certificates": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clinic_commercial_offer_message": {
+      "type": "richtext"
+    },
+    "clinic_includes_list1": {
+      "type": "richtext"
+    },
+    "clinic_includes_list2": {
+      "type": "richtext"
+    },
+    "clinic_nights": {
+      "type": "integer"
+    },
+    "clinic_stay_days": {
+      "type": "integer"
+    },
+    "stay_services_list": {
+      "type": "json"
+    },
+    "clinic_doctor_name": {
+      "type": "string"
+    },
+    "clinic_doctor_preview_pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clinic_offer_price": {
+      "type": "string",
+      "required": true
+    },
+    "clinic_offer_price_format": {
+      "type": "enumeration",
+      "enum": [
+        "EUR",
+        "USD",
+        "GBP",
+        "RUB"
+      ],
+      "default": "EUR",
+      "required": true
+    },
+    "assistant_block_pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "assistant_block_name": {
+      "type": "string"
+    },
+    "assistant_block_phone": {
+      "type": "string"
+    },
+    "assistant_block_email": {
+      "type": "string"
+    },
+    "clinic_appointment_date": {
+      "type": "datetime"
+    }
+  }
+}
